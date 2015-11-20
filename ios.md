@@ -11,15 +11,15 @@
   - 获取应用的documents方法：
 
 	```objc
-		+(NSString*) getDocumentDir {
-		    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-		                                                          NSUserDomainMask,
-		                                                          YES);
-		    if ([paths count] > 0) {
-		        return [paths objectAtIndex:0];
-		    }
-		    return nil;
-		}
+	+(NSString*) getDocumentDir {
+	   NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+		                                                    NSUserDomainMask,
+		                                                    YES);
+	   if ([paths count] > 0) {
+	       return [paths objectAtIndex:0];
+	    }
+	    return nil;
+	}
 	```
 
   - 向documents目录写文件方法：
