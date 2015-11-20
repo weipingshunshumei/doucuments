@@ -24,13 +24,12 @@
 
   - 向documents目录写文件方法：
 
-	`
-
+	```objc
 	    NSString *bodyFileName = [@"body." stringByAppendingString:uploadTimeStr];
 	    NSString *fileName = [[SmUtils getDocumentDir
 	                 stringByAppendingPathComponent:bodyFileName];
 		[writeData writeToFile:fileName atomically:FALSE];
-	`
+	```
 
 ## 字符串
 - 字符串拼接:
