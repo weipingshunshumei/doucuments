@@ -10,8 +10,7 @@
 - documents目录：
   - 获取应用的documents方法：
 
-	`
-	
+	```objc
 		+(NSString*) getDocumentDir {
 		    NSArray * paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
 		                                                          NSUserDomainMask,
@@ -21,7 +20,7 @@
 		    }
 		    return nil;
 		}
-	`
+	```
 
   - 向documents目录写文件方法：
 
